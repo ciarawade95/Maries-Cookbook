@@ -1557,21 +1557,21 @@ body.on-recipe .site-header {
   transition: transform 0.4s ease;
 }
 .polaroid--desktop.polaroid--left {
-  left: -2vw;
-  transform: translateY(-52%) rotate(-6deg);
+  left: 4vw;
+  transform: translateY(-50%) rotate(-5deg);
 }
 .polaroid--desktop.polaroid--left:hover {
-  transform: translateY(-54%) rotate(-4deg) scale(1.02);
+  transform: translateY(-52%) rotate(-3deg) scale(1.02);
 }
 .polaroid--desktop.polaroid--right {
-  right: -2vw;
-  transform: translateY(-48%) rotate(5deg);
+  right: 4vw;
+  transform: translateY(-50%) rotate(5deg);
 }
 .polaroid--desktop.polaroid--right:hover {
-  transform: translateY(-50%) rotate(3deg) scale(1.02);
+  transform: translateY(-52%) rotate(3deg) scale(1.02);
 }
 .polaroid--desktop .polaroid-inner {
-  width: clamp(200px, 22vw, 360px);
+  width: clamp(180px, 18vw, 280px);
   box-shadow: 0 12px 40px rgba(44,44,30,0.22);
   border-radius: 2px;
   overflow: hidden;
@@ -1580,63 +1580,49 @@ body.on-recipe .site-header {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center top;
   display: block;
 }
-.polaroid--desktop.polaroid--left .polaroid-inner img {
-  aspect-ratio: 3 / 4;
-  object-position: center center;
-}
 
-/* Mobile photo row */
+/* Mobile photo row — hidden on desktop, shown on mobile */
 .hero-photos-mobile {
   display: none;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+  padding: 0 var(--content-padding);
+  margin-bottom: var(--space-lg);
 }
 
-/* --- MOBILE BREAKPOINT --- */
-@media (max-width: 860px) {
-  .hero {
-    padding: var(--space-xl) var(--content-padding) var(--space-xl);
-    min-height: auto;
-  }
+/* Polaroid inner used in mobile row */
+.hero-photos-mobile .polaroid-inner {
+  width: clamp(130px, 38vw, 175px);
+  box-shadow: 0 8px 20px rgba(44,44,30,0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.hero-photos-mobile .polaroid-inner img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
 
-  /* Hide desktop absolute photos */
-  .polaroid--desktop { display: none; }
+@media (max-width: 860px) {
+  /* Show mobile photos */
+  .hero-photos-mobile { display: flex; }
+
+  /* Hide desktop absolute polaroids and botanical */
+  .polaroid--desktop { display: none !important; }
   .hero-botanical-edge { display: none; }
 
-  /* Show mobile photo row */
-  .hero-photos-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 16px;
-    width: 100%;
-    margin-bottom: var(--space-lg);
-  }
-
-  /* Inline polaroids inside the mobile row */
-  .hero-photos-mobile .polaroid {
-    position: static;
-    display: block;
-  }
-  .hero-photos-mobile .polaroid--left {
-    transform: rotate(-5deg);
-    transform-origin: bottom right;
-  }
-  .hero-photos-mobile .polaroid--right {
-    transform: rotate(5deg);
-    transform-origin: bottom left;
-  }
-  .hero-photos-mobile .polaroid-inner {
-    width: clamp(130px, 40vw, 180px);
-    box-shadow: 0 8px 20px rgba(44,44,30,0.2);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-  .hero-photos-mobile .polaroid-inner img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    display: block;
+  /* Hero layout on mobile */
+  .hero {
+    flex-direction: column;
+    padding: var(--space-lg) 0 var(--space-xl);
+    min-height: auto;
+    align-items: center;
   }
 }
 
