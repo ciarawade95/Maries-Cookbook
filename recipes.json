@@ -163,7 +163,7 @@
       "totalTime": "1 hr 35 mins",
       "serves": 4,
       "difficulty": "Easy",
-      "image": "images/nut_roast.jpg",
+      "image": "images/nut_roast_real.jpg",
       "pullQuote": "The centrepiece worth making — rich, golden, and deeply satisfying.",
       "chefNotes": "Cook the lentil mixture until it is fairly dry before adding the remaining ingredients. Too much moisture and the loaf won't hold together when sliced.",
       "tips": "This is actually better made the day before. Cool completely, refrigerate, then slice and reheat — it holds its shape perfectly and the flavours deepen overnight.",
@@ -381,6 +381,53 @@
         "Chop both the florets and stalk of the broccoli into small, even pieces. Finely dice the red onion, slice the apple into thin matchsticks and roughly chop the walnuts. Combine in a large bowl.",
         "To make the dressing, whisk together the olive oil, apple cider vinegar, Dijon mustard, maple syrup, garlic and a generous sprinkle of sea salt and black pepper. Taste and adjust the seasoning.",
         "Pour the dressing over the broccoli mixture and mix well to combine. This salad can be served straight away, but is far better after it has had time to chill and marinate in the fridge (20 minutes at least). Transfer to a serving bowl and finish with a crack of black pepper."
+      ]
+    },
+    {
+      "id": "basque-chicken",
+      "title": "Basque Chicken with Olives",
+      "slug": "basque-chicken",
+      "category": "mains",
+      "tags": ["gluten-free", "main"],
+      "description": "A deeply flavourful one-pan dish from the Basque country — golden chicken braised with peppers, tomatoes, olives and smoked paprika until tender and rich. The kind of meal that fills the whole house with a wonderful smell.",
+      "prepTime": "15 mins",
+      "cookTime": "50 mins",
+      "totalTime": "1 hr 5 mins",
+      "serves": 4,
+      "difficulty": "Easy",
+      "image": "images/basque_chicken.jpg",
+      "pullQuote": "One pan, big flavour — the Basque way.",
+      "chefNotes": "Don't rush the browning of the chicken — a deep golden skin adds enormous flavour to the finished sauce. Pat the pieces dry before they go in the pan.",
+      "tips": "This is even better the next day once the flavours have had time to meld. Reheat gently on the hob with a splash of water if needed.",
+      "storage": "Keeps refrigerated for up to 3 days. The sauce thickens overnight — loosen with a little stock or water when reheating.",
+      "freezing": "Freezes well for up to 3 months. Cool completely, then freeze in portions with plenty of sauce.",
+      "variations": "Try adding a handful of capers along with the olives for extra brininess. A glass of white wine added after the onions cook down is a lovely addition.",
+      "ingredients": [
+        { "amount": "8 pieces", "item": "chicken thighs and drumsticks, bone-in skin-on" },
+        { "amount": "2 tbsp", "item": "olive oil" },
+        { "amount": "2", "item": "onions, thinly sliced" },
+        { "amount": "2 cloves", "item": "garlic, minced" },
+        { "amount": "2", "item": "red peppers, deseeded and sliced" },
+        { "amount": "1", "item": "yellow pepper, deseeded and sliced" },
+        { "amount": "1 tsp", "item": "smoked paprika" },
+        { "amount": "1 tsp", "item": "sweet paprika" },
+        { "amount": "400g tin", "item": "chopped tomatoes" },
+        { "amount": "200ml", "item": "chicken stock" },
+        { "amount": "150g", "item": "green olives, pitted" },
+        { "amount": "2", "item": "bay leaves" },
+        { "amount": "1 tbsp", "item": "fresh thyme leaves" },
+        { "amount": "", "item": "salt and black pepper" },
+        { "amount": "handful", "item": "fresh flat-leaf parsley, to serve" }
+      ],
+      "method": [
+        "Pat the chicken pieces dry with kitchen paper and season generously with salt and pepper. Heat the olive oil in a large, wide casserole or deep frying pan over a medium-high heat.",
+        "Brown the chicken pieces in batches, skin-side down first, for about 4–5 minutes per side until deeply golden. Don't crowd the pan. Remove and set aside.",
+        "Reduce the heat to medium. Add the onions to the same pan and cook for 8–10 minutes, stirring occasionally, until soft and starting to caramelise. Add the garlic and cook for 1 minute more.",
+        "Add the sliced peppers and cook for 5 minutes until beginning to soften. Stir in both paprikas and cook for 1 minute until fragrant.",
+        "Pour in the chopped tomatoes and chicken stock. Stir to combine, scraping up any golden bits from the bottom of the pan. Add the bay leaves and thyme.",
+        "Return the chicken to the pan, nestling the pieces into the sauce skin-side up. Bring to a gentle simmer, then partially cover and cook for 30–35 minutes until the chicken is cooked through and tender.",
+        "Stir in the olives and cook uncovered for a further 5 minutes to let the sauce reduce slightly. Taste and adjust seasoning.",
+        "Scatter over fresh parsley and serve straight from the pan with crusty bread, rice or roasted potatoes."
       ]
     }
   ]
