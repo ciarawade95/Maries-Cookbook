@@ -435,7 +435,7 @@ function openRecipe(id) {
   STATE.baseServings = recipe.serves;
 
   // Hide home, show recipe
-  const homeSection = document.querySelector('.hero');
+  const homeSection = document.getElementById('heroSection');
   const contentsSection = document.getElementById('contents');
   const recipeSection = document.getElementById('recipeSection');
   const favSection = document.getElementById('favouritesSection');
@@ -883,7 +883,7 @@ function renderFavourites() {
    NAVIGATION / PAGE ROUTING
    ============================================================ */
 function closePage() {
-  const homeSection = document.querySelector('.hero');
+  const homeSection = document.getElementById('heroSection');
   const contentsSection = document.getElementById('contents');
   const recipeSection = document.getElementById('recipeSection');
   const favSection = document.getElementById('favouritesSection');
@@ -905,7 +905,7 @@ function closePage() {
 }
 
 function showFavouritesPage() {
-  const homeSection = document.querySelector('.hero');
+  const homeSection = document.getElementById('heroSection');
   const contentsSection = document.getElementById('contents');
   const recipeSection = document.getElementById('recipeSection');
   const favSection = document.getElementById('favouritesSection');
@@ -1276,15 +1276,7 @@ function setupSmoothScroll() {
    PARALLAX FOR BOTANICAL ILLUSTRATIONS
    ============================================================ */
 function setupParallax() {
-  const botanicals = document.querySelectorAll('.hero-botanical');
-  if (!botanicals.length) return;
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    botanicals.forEach((el, i) => {
-      const dir = i % 2 === 0 ? 1 : -1;
-      el.style.transform = `translateY(calc(-50% + ${y * dir * 0.08}px))`;
-    });
-  }, { passive: true });
+  // Botanical parallax removed — hero now uses family photos
 }
 
 
