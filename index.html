@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gathered at the Table — a collection of cherished family recipes" />
+  <title>Gathered at the Table</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-home" data-theme="light">
+
+  <!-- Reading progress bar -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- Skip to content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- ===== SITE HEADER / NAV ===== -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Gathered at the Table — Home">
+        <span class="logo-small">gathered at the table</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#contents" class="nav-link">Recipes</a></li>
+          <li><a href="favourites.html" class="nav-link">Favourites</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Search toggle -->
+        <button class="icon-btn" id="searchToggle" aria-label="Open search" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+
+        <!-- Dark mode toggle -->
+        <button class="icon-btn" id="darkModeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- Font size controls -->
+        <div class="font-controls" role="group" aria-label="Text size">
+          <button class="font-btn" data-size="small" aria-label="Small text">A</button>
+          <button class="font-btn active" data-size="medium" aria-label="Medium text">A</button>
+          <button class="font-btn" data-size="large" aria-label="Large text">A</button>
+        </div>
+
+        <!-- Mobile menu toggle -->
+        <button class="icon-btn mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav drawer -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="#contents" class="mobile-nav-link">Recipes</a></li>
+          <li><a href="favourites.html" class="mobile-nav-link">Favourites</a></li>
+          <li class="nav-divider"></li>
+          <li><a href="#soups" class="mobile-nav-link">Soups</a></li>
+          <li><a href="#breakfast" class="mobile-nav-link">Breakfast</a></li>
+          <li><a href="#bakes" class="mobile-nav-link">Bakes</a></li>
+          <li><a href="#mains" class="mobile-nav-link">Mains</a></li>
+          <li><a href="#sides" class="mobile-nav-link">Sides</a></li>
+          <li><a href="#sweet-treats" class="mobile-nav-link">Sweet Treats</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== SEARCH OVERLAY ===== -->
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true" role="dialog" aria-label="Search recipes">
+    <div class="search-inner">
+      <div class="search-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="search" id="searchInput" class="search-input" placeholder="Search recipes, ingredients…" autocomplete="off" aria-label="Search recipes and ingredients" />
+        <button class="icon-btn search-close" id="searchClose" aria-label="Close search">✕</button>
+      </div>
+
+      <!-- Filter pills -->
+      <div class="filter-pills" role="group" aria-label="Filter by category">
+        <button class="pill active" data-filter="all">All</button>
+        <button class="pill" data-filter="vegetarian">Vegetarian</button>
+        <button class="pill" data-filter="vegan">Vegan</button>
+        <button class="pill" data-filter="gluten-free">Gluten Free</button>
+        <button class="pill" data-filter="breakfast">Breakfast</button>
+        <button class="pill" data-filter="soup">Soup</button>
+        <button class="pill" data-filter="sweet-treats">Dessert</button>
+        <button class="pill" data-filter="mains">Main</button>
+      </div>
+
+      <div class="search-results" id="searchResults" aria-live="polite" aria-label="Search results"></div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-botanical hero-botanical--left" aria-hidden="true">
+        <!-- Olive branch SVG inline -->
+        <svg viewBox="0 0 120 400" xmlns="http://www.w3.org/2000/svg" class="botanical-svg">
+          <g stroke="#55613B" stroke-width="1.2" fill="none" opacity="0.6">
+            <path d="M60 380 Q55 320 50 280 Q45 240 55 200 Q65 160 58 120 Q52 80 60 20" stroke-width="1.5"/>
+            <ellipse cx="40" cy="300" rx="14" ry="8" transform="rotate(-30 40 300)"/>
+            <ellipse cx="72" cy="270" rx="14" ry="8" transform="rotate(25 72 270)"/>
+            <ellipse cx="38" cy="240" rx="14" ry="8" transform="rotate(-35 38 240)"/>
+            <ellipse cx="70" cy="210" rx="14" ry="8" transform="rotate(20 70 210)"/>
+            <ellipse cx="42" cy="180" rx="12" ry="7" transform="rotate(-40 42 180)"/>
+            <ellipse cx="68" cy="155" rx="12" ry="7" transform="rotate(30 68 155)"/>
+            <ellipse cx="45" cy="128" rx="11" ry="6" transform="rotate(-25 45 128)"/>
+            <ellipse cx="65" cy="105" rx="11" ry="6" transform="rotate(35 65 105)"/>
+            <line x1="60" y1="300" x2="40" y2="300"/>
+            <line x1="60" y1="270" x2="72" y2="270"/>
+            <line x1="57" y1="240" x2="38" y2="240"/>
+            <line x1="58" y1="210" x2="70" y2="210"/>
+            <line x1="55" y1="180" x2="42" y2="180"/>
+            <line x1="57" y1="155" x2="68" y2="155"/>
+            <line x1="56" y1="128" x2="45" y2="128"/>
+            <line x1="57" y1="105" x2="65" y2="105"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero-botanical hero-botanical--right" aria-hidden="true">
+        <!-- Rosemary SVG inline -->
+        <svg viewBox="0 0 100 380" xmlns="http://www.w3.org/2000/svg" class="botanical-svg">
+          <g stroke="#55613B" stroke-width="1" fill="none" opacity="0.5">
+            <path d="M50 370 Q52 310 48 260 Q44 210 52 160 Q60 110 54 60 Q48 20 50 5" stroke-width="1.5"/>
+            <path d="M48 340 Q30 335 20 328"/><path d="M52 325 Q68 318 78 310"/>
+            <path d="M47 308 Q28 302 18 294"/><path d="M53 292 Q70 285 80 276"/>
+            <path d="M46 276 Q27 269 17 260"/><path d="M54 260 Q72 252 82 243"/>
+            <path d="M47 243 Q29 235 19 226"/><path d="M53 226 Q70 218 80 208"/>
+            <path d="M47 208 Q30 200 20 191"/><path d="M53 191 Q69 182 78 173"/>
+            <path d="M48 173 Q32 164 23 155"/><path d="M52 155 Q67 146 76 137"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">A family collection</p>
+        <h1 id="heroTitle" class="hero-title">
+          Gathered<br><em>at the Table</em>
+        </h1>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <p class="hero-description">
+          These are the recipes that fill kitchens with warmth and tables with love. Simple, honest, and full of flavour — cooked with care and shared with joy.
+        </p>
+        <a href="#contents" class="hero-cta">Browse the recipes</a>
+      </div>
+    </section>
+
+    <!-- ===== CONTENTS ===== -->
+    <section class="contents-section" id="contents" aria-labelledby="contentsTitle">
+      <div class="section-container">
+        <header class="section-header">
+          <div class="section-ornament" aria-hidden="true">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" width="200" height="20">
+              <line x1="0" y1="10" x2="85" y2="10" stroke="#AAB69A" stroke-width="0.8"/>
+              <circle cx="100" cy="10" r="3" fill="#55613B"/>
+              <line x1="115" y1="10" x2="200" y2="10" stroke="#AAB69A" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <h2 id="contentsTitle" class="section-title">The Recipes</h2>
+          <p class="section-subtitle">Every recipe, lovingly gathered</p>
+        </header>
+
+        <!-- Category grid -->
+        <nav class="categories-grid" aria-label="Recipe categories" id="categoriesGrid">
+          <!-- Populated by JS -->
+        </nav>
+
+        <!-- All recipes index -->
+        <div class="recipes-index" id="recipesIndex">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RECIPE DETAIL (hidden by default, shown when recipe selected) ===== -->
+    <section class="recipe-section" id="recipeSection" aria-label="Recipe" hidden>
+      <div class="recipe-container" id="recipeContainer">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FAVOURITES PAGE (shown when on favourites) ===== -->
+  <section class="favourites-section" id="favouritesSection" hidden aria-labelledby="favTitle">
+    <div class="section-container">
+      <header class="section-header">
+        <div class="section-ornament" aria-hidden="true">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" width="200" height="20">
+            <line x1="0" y1="10" x2="85" y2="10" stroke="#AAB69A" stroke-width="0.8"/>
+            <circle cx="100" cy="10" r="3" fill="#55613B"/>
+            <line x1="115" y1="10" x2="200" y2="10" stroke="#AAB69A" stroke-width="0.8"/>
+          </svg>
+        </div>
+        <h2 id="favTitle" class="section-title">Your Favourites</h2>
+        <p class="section-subtitle">Recipes saved with a little heart</p>
+      </header>
+      <div class="recipes-grid" id="favouritesGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-botanical" aria-hidden="true">
+        <svg viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" width="300" height="60">
+          <g stroke="#55613B" stroke-width="0.8" fill="none" opacity="0.4">
+            <path d="M150 50 Q140 35 120 25 Q100 15 90 10"/>
+            <path d="M150 50 Q160 35 180 25 Q200 15 210 10"/>
+            <ellipse cx="110" cy="18" rx="10" ry="5" transform="rotate(-20 110 18)"/>
+            <ellipse cx="95" cy="12" rx="8" ry="4" transform="rotate(-30 95 12)"/>
+            <ellipse cx="190" cy="18" rx="10" ry="5" transform="rotate(20 190 18)"/>
+            <ellipse cx="205" cy="12" rx="8" ry="4" transform="rotate(30 205 12)"/>
+          </g>
+        </svg>
+      </div>
+      <p class="footer-title">Gathered at the Table</p>
+      <p class="footer-text">A collection of cherished recipes, made with love.</p>
+      <p class="footer-small">Recipes belong to their original creators. Gathered here for personal use only.</p>
+    </div>
+  </footer>
+
+  <!-- ===== PRINT OVERLAY ===== -->
+  <div class="print-content" id="printContent" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
