@@ -6,13 +6,48 @@
     "author": "A family collection"
   },
   "categories": [
-    { "id": "soups", "name": "Soups", "description": "Warming bowls to nourish the soul", "illustration": "steam" },
-    { "id": "breakfast", "name": "Breakfast", "description": "Gentle starts to beautiful days", "illustration": "granola" },
-    { "id": "bakes", "name": "Bakes", "description": "From the oven with love", "illustration": "bread" },
-    { "id": "mains", "name": "Mains", "description": "Hearty dishes for the table", "illustration": "mixing-bowl" },
-    { "id": "sides", "name": "Sides", "description": "The finishing touches", "illustration": "parsley" },
-    { "id": "sweet-treats", "name": "Sweet Treats", "description": "A little sweetness goes a long way", "illustration": "jar" },
-    { "id": "drinks", "name": "Drinks", "description": "Something to sip", "illustration": "lemon" }
+    {
+      "id": "soups",
+      "name": "Soups",
+      "description": "Warming bowls to nourish the soul",
+      "illustration": "steam"
+    },
+    {
+      "id": "breakfast",
+      "name": "Breakfast",
+      "description": "Gentle starts to beautiful days",
+      "illustration": "granola"
+    },
+    {
+      "id": "bakes",
+      "name": "Bakes",
+      "description": "From the oven with love",
+      "illustration": "bread"
+    },
+    {
+      "id": "mains",
+      "name": "Mains",
+      "description": "Hearty dishes for the table",
+      "illustration": "mixing-bowl"
+    },
+    {
+      "id": "sides",
+      "name": "Sides",
+      "description": "The finishing touches",
+      "illustration": "parsley"
+    },
+    {
+      "id": "sweet-treats",
+      "name": "Sweet Treats",
+      "description": "A little sweetness goes a long way",
+      "illustration": "jar"
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "description": "Something to sip",
+      "illustration": "lemon"
+    }
   ],
   "recipes": [
     {
@@ -20,7 +55,12 @@
       "title": "Lentil Soup",
       "slug": "lentil-soup",
       "category": "soups",
-      "tags": ["vegan", "vegetarian", "gluten-free", "soup"],
+      "tags": [
+        "vegan",
+        "vegetarian",
+        "gluten-free",
+        "soup"
+      ],
       "description": "Don't settle for a bland lentil soup. Make it right, and you'll have everyone begging for seconds — and thirds! The touch of spices and finishing it off with lemon really lifts this soup to the next level.",
       "prepTime": "10 mins",
       "cookTime": "45 mins",
@@ -35,21 +75,66 @@
       "freezing": "Freezes beautifully for up to 3 months. Cool completely before freezing in portions.",
       "variations": "Try adding a swirl of yoghurt and a pinch of chilli flakes to serve. For a richer broth, use chicken stock instead of vegetable.",
       "ingredients": [
-        { "amount": "2 tbsp", "item": "olive oil" },
-        { "amount": "1", "item": "onion, chopped (white, brown or yellow)" },
-        { "amount": "2 cloves", "item": "garlic, minced" },
-        { "amount": "1 large", "item": "carrot, chopped" },
-        { "amount": "2 ribs", "item": "celery, chopped" },
-        { "amount": "2 cups / 400g", "item": "dried lentils, green or brown, rinsed" },
-        { "amount": "400g", "item": "crushed tomatoes" },
-        { "amount": "1.5 litres", "item": "vegetable or chicken stock, low sodium" },
-        { "amount": "½ tsp each", "item": "cumin and coriander powder" },
-        { "amount": "1½ tsp", "item": "paprika powder" },
-        { "amount": "2", "item": "dried bay leaves" },
-        { "amount": "1", "item": "lemon (zest + juice)" },
-        { "amount": "¼ tsp each", "item": "salt and pepper" },
-        { "amount": "handful", "item": "fresh parsley, to serve" },
-        { "amount": "", "item": "warm bread, to serve" }
+        {
+          "amount": "2 tbsp",
+          "item": "olive oil"
+        },
+        {
+          "amount": "1",
+          "item": "onion, chopped (white, brown or yellow)"
+        },
+        {
+          "amount": "2 cloves",
+          "item": "garlic, minced"
+        },
+        {
+          "amount": "1 large",
+          "item": "carrot, chopped"
+        },
+        {
+          "amount": "2 ribs",
+          "item": "celery, chopped"
+        },
+        {
+          "amount": "2 cups / 400g",
+          "item": "dried lentils, green or brown, rinsed"
+        },
+        {
+          "amount": "400g",
+          "item": "crushed tomatoes"
+        },
+        {
+          "amount": "1.5 litres",
+          "item": "vegetable or chicken stock, low sodium"
+        },
+        {
+          "amount": "½ tsp each",
+          "item": "cumin and coriander powder"
+        },
+        {
+          "amount": "1½ tsp",
+          "item": "paprika powder"
+        },
+        {
+          "amount": "2",
+          "item": "dried bay leaves"
+        },
+        {
+          "amount": "1",
+          "item": "lemon (zest + juice)"
+        },
+        {
+          "amount": "¼ tsp each",
+          "item": "salt and pepper"
+        },
+        {
+          "amount": "handful",
+          "item": "fresh parsley, to serve"
+        },
+        {
+          "amount": "",
+          "item": "warm bread, to serve"
+        }
       ],
       "method": [
         "Heat oil in a large pot over medium heat. Add garlic and onion, cook for 2 minutes.",
@@ -66,7 +151,12 @@
       "title": "Red Lentil Soup with Lemon",
       "slug": "red-lentil-soup",
       "category": "soups",
-      "tags": ["vegan", "vegetarian", "gluten-free", "soup"],
+      "tags": [
+        "vegan",
+        "vegetarian",
+        "gluten-free",
+        "soup"
+      ],
       "description": "A Melissa Clark classic from the New York Times — this is the lentil soup that makes you stop, taste, and savour. Vibrant with cumin, brightened with lemon, and finished with good olive oil.",
       "prepTime": "10 mins",
       "cookTime": "35 mins",
@@ -81,19 +171,58 @@
       "freezing": "Freezes well for up to 3 months.",
       "variations": "Add a pinch of turmeric for a beautiful golden colour. Top with crispy fried onions for texture.",
       "ingredients": [
-        { "amount": "3 tbsp", "item": "olive oil, plus extra for drizzling" },
-        { "amount": "1 large", "item": "onion, chopped" },
-        { "amount": "2 cloves", "item": "garlic, minced" },
-        { "amount": "1 tbsp", "item": "tomato paste" },
-        { "amount": "1 tsp", "item": "ground cumin" },
-        { "amount": "¼ tsp", "item": "kosher salt, more to taste" },
-        { "amount": "¼ tsp", "item": "ground black pepper" },
-        { "amount": "pinch", "item": "ground chilli powder or cayenne, more to taste" },
-        { "amount": "1 litre", "item": "chicken or vegetable broth" },
-        { "amount": "1 cup", "item": "red lentils" },
-        { "amount": "1 large", "item": "carrot, peeled and diced" },
-        { "amount": "juice of ½", "item": "lemon, more to taste" },
-        { "amount": "3 tbsp", "item": "fresh cilantro, chopped" }
+        {
+          "amount": "3 tbsp",
+          "item": "olive oil, plus extra for drizzling"
+        },
+        {
+          "amount": "1 large",
+          "item": "onion, chopped"
+        },
+        {
+          "amount": "2 cloves",
+          "item": "garlic, minced"
+        },
+        {
+          "amount": "1 tbsp",
+          "item": "tomato paste"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "ground cumin"
+        },
+        {
+          "amount": "¼ tsp",
+          "item": "kosher salt, more to taste"
+        },
+        {
+          "amount": "¼ tsp",
+          "item": "ground black pepper"
+        },
+        {
+          "amount": "pinch",
+          "item": "ground chilli powder or cayenne, more to taste"
+        },
+        {
+          "amount": "1 litre",
+          "item": "chicken or vegetable broth"
+        },
+        {
+          "amount": "1 cup",
+          "item": "red lentils"
+        },
+        {
+          "amount": "1 large",
+          "item": "carrot, peeled and diced"
+        },
+        {
+          "amount": "juice of ½",
+          "item": "lemon, more to taste"
+        },
+        {
+          "amount": "3 tbsp",
+          "item": "fresh cilantro, chopped"
+        }
       ],
       "method": [
         "In a large pot, heat 3 tablespoons of oil over high heat until hot and shimmering. Add onion and garlic, and sauté until golden, about 4 minutes.",
@@ -108,7 +237,10 @@
       "title": "Granola",
       "slug": "granola",
       "category": "breakfast",
-      "tags": ["vegetarian", "breakfast"],
+      "tags": [
+        "vegetarian",
+        "breakfast"
+      ],
       "description": "A nourishing, deeply satisfying granola built on tahini, honey and warming spices. High in fibre, rich in good fats, and endlessly adaptable. Make a big batch and it will serve you all week.",
       "prepTime": "10 mins",
       "cookTime": "40 mins",
@@ -125,21 +257,66 @@
       "nutritionNote": "Gut Health: High in fibre (porridge oats and nuts). Brain Fog: Thiamin B1 (oats, seeds), Vitamin E (nuts & seeds), Magnesium (nuts & seeds), Iron (nuts). Bone Health: Calcium (tahini).",
       "allergens": "Gluten, Tree Nuts, Sesame",
       "ingredients": [
-        { "amount": "50g", "item": "tahini paste" },
-        { "amount": "50g", "item": "olive oil" },
-        { "amount": "50g", "item": "honey" },
-        { "amount": "1 tsp", "item": "ground cinnamon" },
-        { "amount": "1 tsp", "item": "ground nutmeg" },
-        { "amount": "1 tsp", "item": "ground cardamom" },
-        { "amount": "1 tsp", "item": "ground ginger" },
-        { "amount": "2 tsp", "item": "vanilla essence" },
-        { "amount": "200g", "item": "porridge oats" },
-        { "amount": "45g", "item": "walnuts" },
-        { "amount": "45g", "item": "cashew nuts" },
-        { "amount": "25g", "item": "almonds" },
-        { "amount": "25g", "item": "whole chia seeds" },
-        { "amount": "25g", "item": "sunflower seeds" },
-        { "amount": "25g", "item": "pumpkin seeds" }
+        {
+          "amount": "50g",
+          "item": "tahini paste"
+        },
+        {
+          "amount": "50g",
+          "item": "olive oil"
+        },
+        {
+          "amount": "50g",
+          "item": "honey"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "ground cinnamon"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "ground nutmeg"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "ground cardamom"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "ground ginger"
+        },
+        {
+          "amount": "2 tsp",
+          "item": "vanilla essence"
+        },
+        {
+          "amount": "200g",
+          "item": "porridge oats"
+        },
+        {
+          "amount": "45g",
+          "item": "walnuts"
+        },
+        {
+          "amount": "45g",
+          "item": "cashew nuts"
+        },
+        {
+          "amount": "25g",
+          "item": "almonds"
+        },
+        {
+          "amount": "25g",
+          "item": "whole chia seeds"
+        },
+        {
+          "amount": "25g",
+          "item": "sunflower seeds"
+        },
+        {
+          "amount": "25g",
+          "item": "pumpkin seeds"
+        }
       ],
       "method": [
         "Preheat your oven to 180°C (350°F).",
@@ -156,7 +333,10 @@
       "title": "Nut Roast",
       "slug": "nut-roast",
       "category": "mains",
-      "tags": ["vegetarian", "main"],
+      "tags": [
+        "vegetarian",
+        "main"
+      ],
       "description": "A proper nut roast — rich with chestnut mushrooms, mixed nuts, red lentils and mature cheddar, served with a simple rosemary tomato sauce. This is the centrepiece worth making.",
       "prepTime": "30 mins",
       "cookTime": "1 hr 5 mins",
@@ -171,35 +351,107 @@
       "freezing": "Freezes well — cool, slice, and freeze with parchment between slices for up to 3 months.",
       "variations": "To make vegan: use an extra tbsp of oil in place of butter, omit the cheese and use 3 tbsp egg replacer. Bake for 1 hour.",
       "ingredients": [
-        { "amount": "1 tbsp", "item": "olive oil" },
-        { "amount": "15g", "item": "butter" },
-        { "amount": "1 large", "item": "onion, finely chopped" },
-        { "amount": "2 sticks", "item": "celery, finely chopped" },
-        { "amount": "2 cloves", "item": "garlic, finely chopped" },
-        { "amount": "200g", "item": "chestnut mushrooms, finely chopped" },
-        { "amount": "1", "item": "red pepper, halved, deseeded and finely diced" },
-        { "amount": "1 large", "item": "carrot, grated" },
-        { "amount": "1 tsp", "item": "dried oregano" },
-        { "amount": "1 tsp", "item": "smoked paprika" },
-        { "amount": "100g", "item": "red lentils" },
-        { "amount": "2 tbsp", "item": "tomato purée" },
-        { "amount": "300ml", "item": "vegetable stock" },
-        { "amount": "100g", "item": "fresh breadcrumbs" },
-        { "amount": "150g", "item": "mixed nuts (walnuts, pecans, hazelnuts, Brazil nuts), roughly chopped" },
-        { "amount": "3 large", "item": "eggs, lightly beaten" },
-        { "amount": "100g", "item": "mature cheddar, grated" },
-        { "amount": "handful", "item": "flat-leaf parsley, finely chopped" },
-        { "amount": "", "item": "salt and ground black pepper" }
+        {
+          "amount": "1 tbsp",
+          "item": "olive oil"
+        },
+        {
+          "amount": "15g",
+          "item": "butter"
+        },
+        {
+          "amount": "1 large",
+          "item": "onion, finely chopped"
+        },
+        {
+          "amount": "2 sticks",
+          "item": "celery, finely chopped"
+        },
+        {
+          "amount": "2 cloves",
+          "item": "garlic, finely chopped"
+        },
+        {
+          "amount": "200g",
+          "item": "chestnut mushrooms, finely chopped"
+        },
+        {
+          "amount": "1",
+          "item": "red pepper, halved, deseeded and finely diced"
+        },
+        {
+          "amount": "1 large",
+          "item": "carrot, grated"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "dried oregano"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "smoked paprika"
+        },
+        {
+          "amount": "100g",
+          "item": "red lentils"
+        },
+        {
+          "amount": "2 tbsp",
+          "item": "tomato purée"
+        },
+        {
+          "amount": "300ml",
+          "item": "vegetable stock"
+        },
+        {
+          "amount": "100g",
+          "item": "fresh breadcrumbs"
+        },
+        {
+          "amount": "150g",
+          "item": "mixed nuts (walnuts, pecans, hazelnuts, Brazil nuts), roughly chopped"
+        },
+        {
+          "amount": "3 large",
+          "item": "eggs, lightly beaten"
+        },
+        {
+          "amount": "100g",
+          "item": "mature cheddar, grated"
+        },
+        {
+          "amount": "handful",
+          "item": "flat-leaf parsley, finely chopped"
+        },
+        {
+          "amount": "",
+          "item": "salt and ground black pepper"
+        }
       ],
       "ingredientGroups": [
         {
           "title": "For the tomato sauce",
           "items": [
-            { "amount": "2 tbsp", "item": "extra virgin olive oil" },
-            { "amount": "2 cloves", "item": "garlic, finely sliced" },
-            { "amount": "1 sprig", "item": "rosemary" },
-            { "amount": "400ml", "item": "passata" },
-            { "amount": "", "item": "salt and ground black pepper" }
+            {
+              "amount": "2 tbsp",
+              "item": "extra virgin olive oil"
+            },
+            {
+              "amount": "2 cloves",
+              "item": "garlic, finely sliced"
+            },
+            {
+              "amount": "1 sprig",
+              "item": "rosemary"
+            },
+            {
+              "amount": "400ml",
+              "item": "passata"
+            },
+            {
+              "amount": "",
+              "item": "salt and ground black pepper"
+            }
           ]
         }
       ],
@@ -222,7 +474,13 @@
       "title": "Smokey Potatoes, Peppers & Chickpeas",
       "slug": "smokey-potatoes",
       "category": "sides",
-      "tags": ["vegan", "vegetarian", "gluten-free", "main", "sides"],
+      "tags": [
+        "vegan",
+        "vegetarian",
+        "gluten-free",
+        "main",
+        "sides"
+      ],
       "description": "A one-tray wonder inspired by Spanish flavours — paprika, garlic and lemon with potatoes, peppers, tomatoes and chickpeas. The perfect mid-week supper that practically cooks itself.",
       "prepTime": "10 mins",
       "cookTime": "30 mins",
@@ -237,17 +495,50 @@
       "freezing": "Not recommended — the texture of the potatoes and chickpeas deteriorates.",
       "variations": "Try adding a handful of olives in the last 10 minutes of cooking. A sprinkle of smoked almonds to serve adds a lovely crunch.",
       "ingredients": [
-        { "amount": "2 large", "item": "potatoes (or equivalent in new potatoes)" },
-        { "amount": "1 large", "item": "red pepper" },
-        { "amount": "6", "item": "cherry tomatoes (or 2 large tomatoes)" },
-        { "amount": "1 tin", "item": "chickpeas, drained (reserve the liquid)" },
-        { "amount": "½", "item": "lemon" },
-        { "amount": "2 tbsp", "item": "smoked paprika" },
-        { "amount": "1 tbsp", "item": "garlic granules (or 2 crushed fresh cloves)" },
-        { "amount": "", "item": "salt and pepper to taste" },
-        { "amount": "4 tbsp", "item": "extra virgin olive oil" },
-        { "amount": "handful", "item": "fresh parsley, to finish" },
-        { "amount": "", "item": "salad and mayonnaise, to serve" }
+        {
+          "amount": "2 large",
+          "item": "potatoes (or equivalent in new potatoes)"
+        },
+        {
+          "amount": "1 large",
+          "item": "red pepper"
+        },
+        {
+          "amount": "6",
+          "item": "cherry tomatoes (or 2 large tomatoes)"
+        },
+        {
+          "amount": "1 tin",
+          "item": "chickpeas, drained (reserve the liquid)"
+        },
+        {
+          "amount": "½",
+          "item": "lemon"
+        },
+        {
+          "amount": "2 tbsp",
+          "item": "smoked paprika"
+        },
+        {
+          "amount": "1 tbsp",
+          "item": "garlic granules (or 2 crushed fresh cloves)"
+        },
+        {
+          "amount": "",
+          "item": "salt and pepper to taste"
+        },
+        {
+          "amount": "4 tbsp",
+          "item": "extra virgin olive oil"
+        },
+        {
+          "amount": "handful",
+          "item": "fresh parsley, to finish"
+        },
+        {
+          "amount": "",
+          "item": "salad and mayonnaise, to serve"
+        }
       ],
       "method": [
         "Heat your oven to 200°C. Chop all the vegetables into bite-sized pieces and scatter into a baking tray.",
@@ -261,7 +552,10 @@
       "title": "Cheddar & Sage Scones",
       "slug": "cheddar-sage-scones",
       "category": "bakes",
-      "tags": ["vegetarian", "bakes"],
+      "tags": [
+        "vegetarian",
+        "bakes"
+      ],
       "description": "Make sure you use a punchy mature cheese to shine through these savoury scones made with mustard and buttermilk. Eat while still warm, spread with butter.",
       "prepTime": "10 mins",
       "cookTime": "15 mins",
@@ -276,15 +570,42 @@
       "freezing": "Freeze baked scones individually, then reheat from frozen at 180°C for 10 minutes.",
       "variations": "Try with rosemary instead of sage, or add a pinch of cayenne to the flour for extra warmth.",
       "ingredients": [
-        { "amount": "225g", "item": "self-raising flour" },
-        { "amount": "1½ tsp", "item": "English mustard powder" },
-        { "amount": "½ tsp", "item": "salt" },
-        { "amount": "", "item": "grinding of black pepper" },
-        { "amount": "50g", "item": "cold butter, cubed" },
-        { "amount": "100g", "item": "mature cheddar, grated" },
-        { "amount": "1 tbsp", "item": "fresh sage, finely chopped, plus 8 small leaves" },
-        { "amount": "1", "item": "egg, beaten" },
-        { "amount": "100ml", "item": "buttermilk" }
+        {
+          "amount": "225g",
+          "item": "self-raising flour"
+        },
+        {
+          "amount": "1½ tsp",
+          "item": "English mustard powder"
+        },
+        {
+          "amount": "½ tsp",
+          "item": "salt"
+        },
+        {
+          "amount": "",
+          "item": "grinding of black pepper"
+        },
+        {
+          "amount": "50g",
+          "item": "cold butter, cubed"
+        },
+        {
+          "amount": "100g",
+          "item": "mature cheddar, grated"
+        },
+        {
+          "amount": "1 tbsp",
+          "item": "fresh sage, finely chopped, plus 8 small leaves"
+        },
+        {
+          "amount": "1",
+          "item": "egg, beaten"
+        },
+        {
+          "amount": "100ml",
+          "item": "buttermilk"
+        }
       ],
       "method": [
         "Heat oven to 220°C / 200°C fan / gas 7. Mix the flour, mustard powder, ½ tsp salt and a grinding of black pepper in a large bowl. Rub in the butter until the mixture resembles fine crumbs. Stir in half the cheese and all the sage. Mix together the egg and buttermilk in a separate bowl.",
@@ -298,7 +619,10 @@
       "title": "Vanilla Coconut Cupcakes",
       "slug": "vanilla-coconut-cupcakes",
       "category": "sweet-treats",
-      "tags": ["vegetarian", "sweet-treats"],
+      "tags": [
+        "vegetarian",
+        "sweet-treats"
+      ],
       "description": "Light, fragrant cupcakes with desiccated coconut, maple syrup and a hint of vanilla. Can be made with spelt flour or gluten-free with buckwheat and rice flour.",
       "prepTime": "15 mins",
       "cookTime": "25 mins",
@@ -313,20 +637,47 @@
       "freezing": "Freeze unfrosted cupcakes for up to 3 months. Thaw at room temperature.",
       "variations": "If allergic to coconut, substitute with almond meal or crushed sunflower seeds. For a very low fructose version, use half coconut nectar and half rice syrup instead of maple syrup.",
       "ingredients": [
-        { "amount": "195g", "item": "organic white or wholemeal spelt flour (or 100g buckwheat + 90g rice flour for gluten free)" },
-        { "amount": "1 tsp", "item": "baking powder" },
-        { "amount": "¾ tsp", "item": "bicarbonate of soda, sifted" },
-        { "amount": "45g", "item": "desiccated coconut" }
+        {
+          "amount": "195g",
+          "item": "organic white or wholemeal spelt flour (or 100g buckwheat + 90g rice flour for gluten free)"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "baking powder"
+        },
+        {
+          "amount": "¾ tsp",
+          "item": "bicarbonate of soda, sifted"
+        },
+        {
+          "amount": "45g",
+          "item": "desiccated coconut"
+        }
       ],
       "ingredientGroups": [
         {
           "title": "Wet Bowl",
           "items": [
-            { "amount": "80ml", "item": "butter, ghee, or coconut oil, melted" },
-            { "amount": "2 tsp", "item": "apple cider vinegar" },
-            { "amount": "2 tsp", "item": "natural vanilla extract or vanilla bean powder" },
-            { "amount": "185ml", "item": "maple syrup" },
-            { "amount": "125ml", "item": "rice milk or 1 whole egg" }
+            {
+              "amount": "80ml",
+              "item": "butter, ghee, or coconut oil, melted"
+            },
+            {
+              "amount": "2 tsp",
+              "item": "apple cider vinegar"
+            },
+            {
+              "amount": "2 tsp",
+              "item": "natural vanilla extract or vanilla bean powder"
+            },
+            {
+              "amount": "185ml",
+              "item": "maple syrup"
+            },
+            {
+              "amount": "125ml",
+              "item": "rice milk or 1 whole egg"
+            }
           ]
         }
       ],
@@ -344,7 +695,12 @@
       "title": "Raw Broccoli Salad",
       "slug": "broccoli-salad",
       "category": "sides",
-      "tags": ["vegan", "vegetarian", "gluten-free", "sides"],
+      "tags": [
+        "vegan",
+        "vegetarian",
+        "gluten-free",
+        "sides"
+      ],
       "description": "Fresh and crunchy broccoli laced with the tang of red onion, the sweetness of red apple and the crunch of walnuts, all united in a maple mustard dressing.",
       "prepTime": "20 mins",
       "cookTime": "0 mins",
@@ -359,21 +715,51 @@
       "freezing": "Not suitable for freezing.",
       "variations": "Swap walnuts for toasted almonds or sunflower seeds. Try dried cranberries instead of apple for a sweeter note.",
       "ingredients": [
-        { "amount": "1 head", "item": "broccoli, including stalk" },
-        { "amount": "½", "item": "red onion" },
-        { "amount": "1", "item": "apple" },
-        { "amount": "60g", "item": "walnuts, roughly chopped" }
+        {
+          "amount": "1 head",
+          "item": "broccoli, including stalk"
+        },
+        {
+          "amount": "½",
+          "item": "red onion"
+        },
+        {
+          "amount": "1",
+          "item": "apple"
+        },
+        {
+          "amount": "60g",
+          "item": "walnuts, roughly chopped"
+        }
       ],
       "ingredientGroups": [
         {
           "title": "Dressing",
           "items": [
-            { "amount": "3 tbsp", "item": "extra-virgin olive oil" },
-            { "amount": "2 tbsp", "item": "apple cider vinegar" },
-            { "amount": "1 tbsp", "item": "Dijon mustard" },
-            { "amount": "1½ tbsp", "item": "maple syrup" },
-            { "amount": "1 clove", "item": "garlic, minced" },
-            { "amount": "", "item": "sea salt & freshly ground black pepper" }
+            {
+              "amount": "3 tbsp",
+              "item": "extra-virgin olive oil"
+            },
+            {
+              "amount": "2 tbsp",
+              "item": "apple cider vinegar"
+            },
+            {
+              "amount": "1 tbsp",
+              "item": "Dijon mustard"
+            },
+            {
+              "amount": "1½ tbsp",
+              "item": "maple syrup"
+            },
+            {
+              "amount": "1 clove",
+              "item": "garlic, minced"
+            },
+            {
+              "amount": "",
+              "item": "sea salt & freshly ground black pepper"
+            }
           ]
         }
       ],
@@ -388,7 +774,10 @@
       "title": "Basque Chicken with Olives",
       "slug": "basque-chicken",
       "category": "mains",
-      "tags": ["gluten-free", "main"],
+      "tags": [
+        "gluten-free",
+        "main"
+      ],
       "description": "A deeply flavourful one-pan dish from the Basque country — golden chicken braised with peppers, tomatoes, olives and smoked paprika until tender and rich. The kind of meal that fills the whole house with a wonderful smell.",
       "prepTime": "15 mins",
       "cookTime": "50 mins",
@@ -403,21 +792,66 @@
       "freezing": "Freezes well for up to 3 months. Cool completely, then freeze in portions with plenty of sauce.",
       "variations": "Try adding a handful of capers along with the olives for extra brininess. A glass of white wine added after the onions cook down is a lovely addition.",
       "ingredients": [
-        { "amount": "8 pieces", "item": "chicken thighs and drumsticks, bone-in skin-on" },
-        { "amount": "2 tbsp", "item": "olive oil" },
-        { "amount": "2", "item": "onions, thinly sliced" },
-        { "amount": "2 cloves", "item": "garlic, minced" },
-        { "amount": "2", "item": "red peppers, deseeded and sliced" },
-        { "amount": "1", "item": "yellow pepper, deseeded and sliced" },
-        { "amount": "1 tsp", "item": "smoked paprika" },
-        { "amount": "1 tsp", "item": "sweet paprika" },
-        { "amount": "400g tin", "item": "chopped tomatoes" },
-        { "amount": "200ml", "item": "chicken stock" },
-        { "amount": "150g", "item": "green olives, pitted" },
-        { "amount": "2", "item": "bay leaves" },
-        { "amount": "1 tbsp", "item": "fresh thyme leaves" },
-        { "amount": "", "item": "salt and black pepper" },
-        { "amount": "handful", "item": "fresh flat-leaf parsley, to serve" }
+        {
+          "amount": "8 pieces",
+          "item": "chicken thighs and drumsticks, bone-in skin-on"
+        },
+        {
+          "amount": "2 tbsp",
+          "item": "olive oil"
+        },
+        {
+          "amount": "2",
+          "item": "onions, thinly sliced"
+        },
+        {
+          "amount": "2 cloves",
+          "item": "garlic, minced"
+        },
+        {
+          "amount": "2",
+          "item": "red peppers, deseeded and sliced"
+        },
+        {
+          "amount": "1",
+          "item": "yellow pepper, deseeded and sliced"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "smoked paprika"
+        },
+        {
+          "amount": "1 tsp",
+          "item": "sweet paprika"
+        },
+        {
+          "amount": "400g tin",
+          "item": "chopped tomatoes"
+        },
+        {
+          "amount": "200ml",
+          "item": "chicken stock"
+        },
+        {
+          "amount": "150g",
+          "item": "green olives, pitted"
+        },
+        {
+          "amount": "2",
+          "item": "bay leaves"
+        },
+        {
+          "amount": "1 tbsp",
+          "item": "fresh thyme leaves"
+        },
+        {
+          "amount": "",
+          "item": "salt and black pepper"
+        },
+        {
+          "amount": "handful",
+          "item": "fresh flat-leaf parsley, to serve"
+        }
       ],
       "method": [
         "Pat the chicken pieces dry with kitchen paper and season generously with salt and pepper. Heat the olive oil in a large, wide casserole or deep frying pan over a medium-high heat.",
@@ -428,6 +862,56 @@
         "Return the chicken to the pan, nestling the pieces into the sauce skin-side up. Bring to a gentle simmer, then partially cover and cook for 30–35 minutes until the chicken is cooked through and tender.",
         "Stir in the olives and cook uncovered for a further 5 minutes to let the sauce reduce slightly. Taste and adjust seasoning.",
         "Scatter over fresh parsley and serve straight from the pan with crusty bread, rice or roasted potatoes."
+      ]
+    },
+    {
+      "id": "rocky-road",
+      "title": "Rocky Road",
+      "slug": "rocky-road",
+      "category": "sweet-treats",
+      "tags": [
+        "vegetarian",
+        "sweet-treats"
+      ],
+      "description": "Rich, indulgent and deeply satisfying — a combination of melted chocolate, broken biscuits, toasted hazelnuts and marshmallows, set until just firm and cut into generous squares. No oven required.",
+      "prepTime": "15 mins",
+      "cookTime": "5 mins",
+      "totalTime": "20 mins + chilling",
+      "serves": 15,
+      "difficulty": "Easy",
+      "image": "images/rocky_road.jpg",
+      "pullQuote": "No oven, no fuss — just good chocolate and better company.",
+      "chefNotes": "Use the best chocolate you can — a mix of dark and milk gives the richest flavour and stops it being too sweet. Don't overmelt; stir gently and take it off the heat as soon as it's smooth.",
+      "tips": "Toast the hazelnuts in a dry pan for 3–4 minutes until golden and fragrant — it makes a huge difference to the flavour. Rub them in a tea towel to remove the skins.",
+      "storage": "Keeps in the fridge for up to 2 weeks in an airtight container. Bring to room temperature for 10 minutes before serving.",
+      "freezing": "Freezes well — wrap individual squares in parchment and freeze for up to 3 months.",
+      "variations": "Swap hazelnuts for pistachios or almonds. Add a handful of dried cranberries or sour cherries for a festive version. A pinch of sea salt flakes scattered on top before chilling is wonderful.",
+      "ingredients": [
+        {
+          "amount": "480g",
+          "item": "milk or dark chocolate (or a combination), broken into pieces"
+        },
+        {
+          "amount": "100g",
+          "item": "digestive biscuits (about 7), roughly broken"
+        },
+        {
+          "amount": "80–100g",
+          "item": "marshmallows (cut large ones in half)"
+        },
+        {
+          "amount": "80g",
+          "item": "shelled hazelnuts, skinned and toasted"
+        }
+      ],
+      "method": [
+        "Place the chocolate in a heatproof bowl set over a saucepan of barely simmering water. Melt slowly, stirring occasionally, until completely smooth. Remove from the heat.",
+        "Line a lightly greased Swiss roll tin with parchment paper.",
+        "Roughly break up the biscuits by hand and scatter over the bottom of the tin.",
+        "Dot half the marshmallows and all of the toasted hazelnuts around the biscuits.",
+        "Pour the melted chocolate over the top and gently shake the tin to get an even layer and fill all the gaps.",
+        "Dot the remaining marshmallows over the top, pressing them in slightly.",
+        "Chill in the fridge until just set — about 1–2 hours. Remove and cut into squares using a sharp knife. Best served slightly cool rather than straight from the fridge."
       ]
     }
   ]
