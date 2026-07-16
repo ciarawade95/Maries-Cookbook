@@ -520,11 +520,7 @@ input, textarea { font-family: inherit; }
   display: block;
 }
 
-/* Hide polaroids on small screens where they'd overlap the text */
-@media (max-width: 750px) {
-  .polaroid { display: none; }
-  .hero { min-height: 70vh; }
-}
+/* Polaroid visibility handled by desktop/mobile classes — see bottom of file */
 
 
 /* ============================================================
