@@ -440,10 +440,11 @@ function openRecipe(id) {
   const recipeSection = document.getElementById('recipeSection');
   const favSection = document.getElementById('favouritesSection');
 
-  if (homeSection) homeSection.hidden = true;
-  if (contentsSection) contentsSection.hidden = true;
-  if (favSection) favSection.hidden = true;
+  if (homeSection) { homeSection.hidden = true; homeSection.style.display = 'none'; }
+  if (contentsSection) { contentsSection.hidden = true; contentsSection.style.display = 'none'; }
+  if (favSection) { favSection.hidden = true; favSection.style.display = 'none'; }
   recipeSection.hidden = false;
+  recipeSection.style.display = 'block';
 
   // Switch to recipe mode — hides main header, shows back bar
   document.body.classList.add('on-recipe');
@@ -485,14 +486,7 @@ function buildRecipeDetail(recipe) {
   const wrapper = document.createElement('div');
   wrapper.className = 'recipe-detail';
 
-  // ---- BACK BUTTON ----
-  const backBtn = document.createElement('a');
-  backBtn.href = '#';
-  backBtn.className = 'recipe-back';
-  backBtn.setAttribute('aria-label', 'Back to all recipes');
-  backBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="15,18 9,12 15,6"/></svg> All recipes`;
-  backBtn.addEventListener('click', (e) => { e.preventDefault(); closePage(); });
-  wrapper.appendChild(backBtn);
+  // Back button is now in the fixed back bar — no inline button needed
 
   // ---- RECIPE HERO ----
   const hero = document.createElement('div');
@@ -895,9 +889,10 @@ function closePage() {
   const favSection = document.getElementById('favouritesSection');
 
   recipeSection.hidden = true;
-  if (favSection) favSection.hidden = true;
-  if (homeSection) homeSection.hidden = false;
-  if (contentsSection) contentsSection.hidden = false;
+  recipeSection.style.display = '';
+  if (favSection) { favSection.hidden = true; favSection.style.display = ''; }
+  if (homeSection) { homeSection.hidden = false; homeSection.style.display = ''; }
+  if (contentsSection) { contentsSection.hidden = false; contentsSection.style.display = ''; }
 
   // Restore normal header, hide back bar
   document.body.classList.remove('on-recipe', 'recipe-scrolled');

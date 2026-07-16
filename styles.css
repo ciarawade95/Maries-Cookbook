@@ -1494,3 +1494,10 @@ body.on-recipe.recipe-scrolled .recipe-back-title {
 @media print {
   .recipe-back-bar { display: none !important; }
 }
+
+/* Belt-and-braces: force hero and contents hidden on recipe pages */
+body.on-recipe .hero,
+body.on-recipe .contents-section,
+body.on-recipe #contents {
+  display: none !important;
+}
