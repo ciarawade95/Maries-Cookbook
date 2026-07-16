@@ -194,14 +194,26 @@ input, textarea { font-family: inherit; }
 
 .site-logo {
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-decoration: none;
 }
-.logo-small {
+.logo-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.logo-main {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: var(--color-accent);
-  text-transform: lowercase;
+  font-style: italic;
 }
 
 .main-nav { margin-left: auto; }
@@ -249,21 +261,7 @@ input, textarea { font-family: inherit; }
 [data-theme="dark"] .icon-sun { display: none; }
 [data-theme="dark"] .icon-moon { display: block; }
 
-/* Font size buttons */
-.font-controls { display: flex; align-items: center; gap: 2px; }
-.font-btn {
-  font-family: var(--font-body);
-  color: var(--color-text-muted);
-  padding: 2px 5px;
-  border-radius: var(--radius-sm);
-  line-height: 1;
-  transition: color var(--transition);
-  font-weight: 500;
-}
-.font-btn:nth-child(1) { font-size: 0.7rem; }
-.font-btn:nth-child(2) { font-size: 0.85rem; }
-.font-btn:nth-child(3) { font-size: 1rem; }
-.font-btn.active, .font-btn:hover { color: var(--color-accent); }
+/* Font size controls removed */
 
 .mobile-menu-toggle { display: none; flex-direction: column; gap: 5px; width: 36px; height: 36px; justify-content: center; }
 .hamburger-line { display: block; width: 20px; height: 1.5px; background: var(--color-text); border-radius: 2px; transition: transform var(--transition), opacity var(--transition); }

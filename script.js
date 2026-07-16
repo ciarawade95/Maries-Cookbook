@@ -1065,7 +1065,7 @@ function printRecipe(recipe) {
   printEl.innerHTML = `
     <div class="print-page">
       <div class="print-header">
-        <span class="print-cookbook-name">Gathered at the Table</span>
+        <span class="print-cookbook-name">Bray to Belly</span>
       </div>
 
       <h1 class="print-title">${recipe.title}</h1>
@@ -1106,7 +1106,7 @@ function printRecipe(recipe) {
       ${notesHtml ? `<div class="print-notes-section">${notesHtml}</div>` : ''}
 
       <div class="print-footer">
-        <span>Gathered at the Table</span>
+        <span>Bray to Belly</span>
         <span>${recipe.title}</span>
       </div>
     </div>`;
@@ -1130,24 +1130,7 @@ function setupSettings() {
     lsSave('gatt_theme', next);
   });
 
-  // Font size
-  const savedFont = lsLoad('gatt_fontsize', 'medium');
-  STATE.currentFont = savedFont;
-  document.body.setAttribute('data-fontsize', savedFont);
-  document.querySelectorAll('.font-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.size === savedFont);
-  });
-
-  document.querySelectorAll('.font-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      STATE.currentFont = btn.dataset.size;
-      document.body.setAttribute('data-fontsize', btn.dataset.size);
-      lsSave('gatt_fontsize', btn.dataset.size);
-      document.querySelectorAll('.font-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.size === btn.dataset.size);
-      });
-    });
-  });
+  // Font size controls removed
 }
 
 
