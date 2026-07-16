@@ -90,6 +90,20 @@
     <!-- HERO -->
     <section class="hero" id="heroSection" aria-labelledby="heroTitle">
 
+      <!-- Mobile photos row: simple, always visible on small screens -->
+      <div class="hero-photos-mobile" aria-hidden="true">
+        <div style="transform: rotate(-5deg); transform-origin: bottom right;">
+          <div class="polaroid-inner">
+            <img src="images/atthetable_2.jpg" alt="A child with a birthday cake" />
+          </div>
+        </div>
+        <div style="transform: rotate(5deg); transform-origin: bottom left; align-self: flex-end;">
+          <div class="polaroid-inner">
+            <img src="images/atthetable.jpg" alt="Family at the Christmas table" />
+          </div>
+        </div>
+      </div>
+
       <!-- Desktop: absolute positioned angled photos -->
       <div class="polaroid polaroid--left polaroid--desktop" aria-hidden="true">
         <div class="polaroid-inner">
@@ -99,21 +113,6 @@
 
       <!-- Centre content -->
       <div class="hero-content">
-
-        <!-- Mobile only: photos above title -->
-        <div class="hero-photos-mobile" aria-hidden="true">
-          <div class="polaroid polaroid--left">
-            <div class="polaroid-inner">
-              <img src="images/atthetable_2.jpg" alt="A child with a birthday cake" />
-            </div>
-          </div>
-          <div class="polaroid polaroid--right">
-            <div class="polaroid-inner">
-              <img src="images/atthetable.jpg" alt="Family at the Christmas table" />
-            </div>
-          </div>
-        </div>
-
         <p class="hero-eyebrow">Farm to Fork</p>
         <h1 id="heroTitle" class="hero-title">
           Bray<br><em>to Belly</em>

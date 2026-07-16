@@ -1587,56 +1587,45 @@ body.on-recipe .site-header {
   object-position: center center;
 }
 
-/* Mobile photo row */
+/* Mobile photo row — hidden on desktop, shown on mobile */
 .hero-photos-mobile {
   display: none;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+  padding: 0 var(--content-padding);
+  margin-bottom: var(--space-lg);
 }
 
-/* --- MOBILE BREAKPOINT --- */
-@media (max-width: 860px) {
-  .hero {
-    padding: var(--space-xl) var(--content-padding) var(--space-xl);
-    min-height: auto;
-  }
+/* Polaroid inner used in mobile row */
+.hero-photos-mobile .polaroid-inner {
+  width: clamp(130px, 38vw, 175px);
+  box-shadow: 0 8px 20px rgba(44,44,30,0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.hero-photos-mobile .polaroid-inner img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
 
-  /* Hide desktop absolute photos */
-  .polaroid--desktop { display: none; }
+@media (max-width: 860px) {
+  /* Show mobile photos */
+  .hero-photos-mobile { display: flex; }
+
+  /* Hide desktop absolute polaroids and botanical */
+  .polaroid--desktop { display: none !important; }
   .hero-botanical-edge { display: none; }
 
-  /* Show mobile photo row */
-  .hero-photos-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 16px;
-    width: 100%;
-    margin-bottom: var(--space-lg);
-  }
-
-  /* Inline polaroids inside the mobile row */
-  .hero-photos-mobile .polaroid {
-    position: static;
-    display: block;
-  }
-  .hero-photos-mobile .polaroid--left {
-    transform: rotate(-5deg);
-    transform-origin: bottom right;
-  }
-  .hero-photos-mobile .polaroid--right {
-    transform: rotate(5deg);
-    transform-origin: bottom left;
-  }
-  .hero-photos-mobile .polaroid-inner {
-    width: clamp(130px, 40vw, 180px);
-    box-shadow: 0 8px 20px rgba(44,44,30,0.2);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-  .hero-photos-mobile .polaroid-inner img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    display: block;
+  /* Hero layout on mobile */
+  .hero {
+    flex-direction: column;
+    padding: var(--space-lg) 0 var(--space-xl);
+    min-height: auto;
+    align-items: center;
   }
 }
 
