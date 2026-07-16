@@ -488,34 +488,35 @@ input, textarea { font-family: inherit; }
 }
 
 .polaroid--left {
-  left: clamp(20px, 6vw, 100px);
-  transform: translateY(-50%) rotate(-5deg);
+  left: clamp(20px, 5vw, 80px);
+  transform: translateY(-50%) rotate(-4deg);
 }
 .polaroid--left:hover {
-  transform: translateY(-52%) rotate(-3deg) scale(1.03);
+  transform: translateY(-53%) rotate(-2deg) scale(1.04);
 }
 
 .polaroid--right {
-  right: clamp(20px, 6vw, 100px);
-  transform: translateY(-50%) rotate(4deg);
+  right: clamp(20px, 5vw, 80px);
+  transform: translateY(-50%) rotate(3deg);
 }
 .polaroid--right:hover {
-  transform: translateY(-52%) rotate(2deg) scale(1.03);
+  transform: translateY(-53%) rotate(1deg) scale(1.04);
 }
 
 /* The white polaroid frame */
 .polaroid-inner {
-  background: #fff;
-  padding: 10px 10px 32px 10px;
-  border-radius: 2px;
-  width: clamp(140px, 16vw, 220px);
+  background: #ffffff;
+  padding: 12px 12px 40px 12px;
+  border-radius: 1px;
+  width: clamp(160px, 18vw, 260px);
+  box-shadow: 0 4px 20px rgba(44,44,30,0.15), 0 1px 4px rgba(44,44,30,0.08);
 }
 
 .polaroid-inner img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   display: block;
 }
 
@@ -1543,4 +1544,23 @@ body.on-recipe .hero,
 body.on-recipe .site-header {
   display: none !important;
   visibility: hidden !important;
+}
+
+/* Botanical edge decoration (right side of hero) */
+.hero-botanical-edge {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-botanical-edge svg {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 860px) {
+  .hero-botanical-edge { display: none; }
 }
