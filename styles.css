@@ -1558,3 +1558,12 @@ body.on-recipe .site-header {
 @media (max-width: 860px) {
   .hero-botanical-edge { display: none; }
 }
+
+/* Mobile photo row — hidden on desktop */
+.hero-photos-mobile { display: none; }
+
+@media (max-width: 860px) {
+  /* Show mobile row, hide desktop absolute polaroids */
+  .hero-photos-mobile { display: flex; }
+  .hero > .polaroid { display: none; }
+}
