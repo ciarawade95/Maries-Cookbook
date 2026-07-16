@@ -445,6 +445,24 @@ function openRecipe(id) {
   if (favSection) favSection.hidden = true;
   recipeSection.hidden = false;
 
+  // Switch to recipe mode — hides main header, shows back bar
+  document.body.classList.add('on-recipe');
+  document.body.classList.remove('recipe-scrolled');
+
+  // Set recipe title in back bar
+  const backTitle = document.getElementById('recipeBackTitle');
+  if (backTitle) backTitle.textContent = recipe.title;
+
+  // Wire up back button
+  const backBtn = document.getElementById('recipeBackBtn');
+  if (backBtn) {
+    backBtn.onclick = (e) => { e.preventDefault(); closePage(); };
+  }
+
+  // Make back bar accessible
+  const backBar = document.getElementById('recipeBackBar');
+  if (backBar) backBar.removeAttribute('aria-hidden');
+
   // Build and inject recipe HTML
   const container = document.getElementById('recipeContainer');
   container.innerHTML = '';
@@ -881,6 +899,11 @@ function closePage() {
   if (homeSection) homeSection.hidden = false;
   if (contentsSection) contentsSection.hidden = false;
 
+  // Restore normal header, hide back bar
+  document.body.classList.remove('on-recipe', 'recipe-scrolled');
+  const backBar = document.getElementById('recipeBackBar');
+  if (backBar) backBar.setAttribute('aria-hidden', 'true');
+
   STATE.currentRecipe = null;
   history.pushState({ page: 'home' }, '', '#');
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1153,38 +1176,10 @@ function setupProgressBar() {
    HEADER SCROLL EFFECT
    ============================================================ */
 function setupHeaderScroll() {
-  const header = document.getElementById('siteHeader');
-  if (!header) return;
-
-  let lastScrollY = window.scrollY;
-  let ticking = false;
-
+  // Show recipe title in back bar after scrolling down a little
   window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        const currentScrollY = window.scrollY;
-
-        // Add blur/background when scrolled at all
-        header.classList.toggle('scrolled', currentScrollY > 20);
-
-        // Only hide/show when on a recipe page and scrolled past the header
-        if (STATE.currentRecipe && currentScrollY > 80) {
-          if (currentScrollY > lastScrollY) {
-            // Scrolling down — hide header
-            header.classList.add('header-hidden');
-          } else {
-            // Scrolling up — show header
-            header.classList.remove('header-hidden');
-          }
-        } else {
-          // On home page or near top — always show
-          header.classList.remove('header-hidden');
-        }
-
-        lastScrollY = currentScrollY;
-        ticking = false;
-      });
-      ticking = true;
+    if (STATE.currentRecipe) {
+      document.body.classList.toggle('recipe-scrolled', window.scrollY > 120);
     }
   }, { passive: true });
 }
@@ -1271,7 +1266,11 @@ function setupSmoothScroll() {
       const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Make sure target is visible before scrolling
+        if (target.hidden) target.hidden = false;
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
       }
     });
   });
