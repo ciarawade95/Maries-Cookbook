@@ -1417,3 +1417,11 @@ input, textarea { font-family: inherit; }
   .categories-grid { grid-template-columns: repeat(2, 1fr); }
   .recipes-grid { grid-template-columns: 1fr; }
 }
+
+/* Hide header on scroll down, reveal on scroll up */
+.site-header {
+  transition: transform 0.35s ease, background var(--transition), border-color var(--transition);
+}
+.site-header.header-hidden {
+  transform: translateY(-100%);
+}

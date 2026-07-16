@@ -1155,8 +1155,37 @@ function setupProgressBar() {
 function setupHeaderScroll() {
   const header = document.getElementById('siteHeader');
   if (!header) return;
+
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
   window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 20);
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const currentScrollY = window.scrollY;
+
+        // Add blur/background when scrolled at all
+        header.classList.toggle('scrolled', currentScrollY > 20);
+
+        // Only hide/show when on a recipe page and scrolled past the header
+        if (STATE.currentRecipe && currentScrollY > 80) {
+          if (currentScrollY > lastScrollY) {
+            // Scrolling down — hide header
+            header.classList.add('header-hidden');
+          } else {
+            // Scrolling up — show header
+            header.classList.remove('header-hidden');
+          }
+        } else {
+          // On home page or near top — always show
+          header.classList.remove('header-hidden');
+        }
+
+        lastScrollY = currentScrollY;
+        ticking = false;
+      });
+      ticking = true;
+    }
   }, { passive: true });
 }
 
